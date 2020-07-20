@@ -1,0 +1,17 @@
+VSPHERE_RESOURCE_POOL: /SDDC-Datacenter/host/Cluster-1/Resources/Compute-ResourcePool/tkg-mgmt-cluster
+SERVICE_CIDR: 100.64.0.0/13
+VSPHERE_SERVER: vcenter.sddc-XXXX.vmwarevmc.com
+VSPHERE_USERNAME: cloudadmin@vmc.local
+VSPHERE_DATACENTER: /SDDC-Datacenter
+VSPHERE_DATASTORE: /SDDC-Datacenter/datastore/WorkloadDatastore
+VSPHERE_MEM_MIB: "4096"
+VSPHERE_HAPROXY_TEMPLATE: /SDDC-Datacenter/vm/Workloads/tkg/photon-3-capv-haproxy-v0.6.3_vmware.1
+VSPHERE_PASSWORD: <encoded:>
+VSPHERE_FOLDER: /SDDC-Datacenter/vm/Workloads/tkg
+VSPHERE_TEMPLATE: /SDDC-Datacenter/vm/Workloads/tkg/photon-3-v1.17.3_vmware.2
+CLUSTER_CIDR: 100.96.0.0/11
+VSPHERE_NETWORK: tkg-01
+VSPHERE_DISK_GIB: "40"
+VSPHERE_NUM_CPUS: "2"
+VSPHERE_SSH_AUTHORIZED_KEY: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJAV04oP0erZlfiK/ZXgTKs7LhVNc+Od5SPl98PkviU3lUsgkt5tavyyR5Qbxqs+r6zbZKf1rsd+nyC0kPwRUicn+I2MMLY8D/Q4djNPEEnZJ6Qw4SJIQn/Ygpps6CsvGrccYAC7cKkHWGaWpiKNA02gMd1NeQpvP1+NjjBigrL3rHNbLlbatU1xrjxC89xmFp2ntXCtPSGSTFy6GhU5MEFiV2hck1vLzZ2uPevTBH4UZn5s+agGKWGlvsX/yBWprepZIAB+nmSWsNjAZMPkE6+n9UODdkmIg4RFXgVzhCeH9swQsZ5nJiKq0IevMxwW26Fth8blBs5qXBhr+It/73
+    vmware@adess-jh

@@ -1,0 +1,13 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: standard      # this is the storage class name we will create in K8s
+  namespace: default
+  labels:
+      app: myfirstapp  # label for the storage-class
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "true"
+provisioner: csi.vsphere.vmware.com
+parameters:
+    storagePolicyName: "vSAN Default Storage Policy" # our vSAN Storage policy from vCenter
+    datastoreurl: "ds:///vmfs/volumes/vsan:583ec5072c11427a-a17dffc3a3369457/" # the Datasture-URL of our WorkloadDatastore
